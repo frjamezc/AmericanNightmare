@@ -1,8 +1,15 @@
-body {
+#bg-start {
   background-image: url("../img/home.png");
+  height: 910px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-img {
-  background-image: image();
+#about h2 p {
+  background-color: white;
+  padding: 100px 80px;
+  text-align: center;
+
 }
