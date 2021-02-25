@@ -1,15 +1,85 @@
-#bg-start {
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #21213d;
+}
+
+#bg_start {
   background-image: url("../img/home.png");
-  height: 910px;
+  min-height: 100%;
+  position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#about h2 p {
-  background-color: white;
-  padding: 100px 80px;
+#about {
+  background-color: #ff7d7d;
+  padding: 50px 80px;
   text-align: center;
+  border: 5px solid rgba(0,0,0,1);
 
+  transition: border-color 1s linear;
+  -moz-transition: border-color 1s linear;    /* FF3.7+ */
+  -o-transition: border-color 1s linear;      /* Opera 10.5 */
+  -webkit-transition: border-color 1s linear; /* Saf3.2+, Chrome */
+}
+
+#about:hover {
+  border-color: #6866ff;
+}
+
+#collateral_murder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about h1 {
+
+}
+
+.assange, .row {
+  background-color: black;
+}
+
+.row img {
+  width: 100%;
+}
+
+div {
+  display: block;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.col {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .col {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
