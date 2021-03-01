@@ -83,3 +83,7 @@ img {
 div {
   display: block;
 }
+
+span {
+  visibility: hidden;
+}
