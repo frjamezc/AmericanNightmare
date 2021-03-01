@@ -66,7 +66,7 @@ img {
 }
 
 .col img {
-  margin-top: 8px;
+
   vertical-align: middle;
   width: 100%;
 }
@@ -78,4 +78,8 @@ img {
     flex: 50%;
     max-width: 50%;
   }
+}
+
+div {
+  display: block;
 }
