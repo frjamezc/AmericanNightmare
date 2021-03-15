@@ -97,7 +97,6 @@ $(document).ready(function () {
 
 var $cursor = $('#cursor');
 
-
 function moveCursor(e) {
   $cursor.addClass('is-moving');
   $cursor.css({"top": e.pageY, "left": e.pageX});
