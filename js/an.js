@@ -93,3 +93,20 @@ $(document).ready(function () {
     $(element).wrap("<a href='https://en.wikipedia.org/wiki/Al-Shifa_pharmaceutical_factory'></a>");
   });
 });
+
+
+var $cursor = $('#cursor');
+
+
+function moveCursor(e) {
+  $cursor.addClass('is-moving');
+  $cursor.css({"top": e.pageY, "left": e.pageX});
+
+  clearTimeout(timer2);
+
+   var timer2 = setTimeout(function() {
+       $cursor.removeClass('is-moving');
+   }, 1000);
+}
+
+$("#bg_start").on('mousemove', moveCursor);
